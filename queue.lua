@@ -10,7 +10,7 @@ function Queue:dequeue()
     table.insert(self, 1)
 end    
 
-function display()
+function Queue:display()
     for i = 1, #Stack do
         print(Stack[i])
     end   
