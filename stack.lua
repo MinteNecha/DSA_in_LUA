@@ -10,7 +10,7 @@ function Stack:pop()
     return table.remove(self)
 end
 
-function display()
+function Stack:display()
 
     for i = 1, #Stack do
         print(Stack[i])
