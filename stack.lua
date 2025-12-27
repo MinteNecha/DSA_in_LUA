@@ -1,18 +1,19 @@
 --Stack follows the Last In First Out principle
+--I also learnt that tables in LUA pretend to be objects
 
-Stack = {}
+stack = {}
 
-function Stack:push(value)
+function stack:push(value)
     table.insert(self, value)
 end
 
-function Stack:pop()
+function stack:pop()
     return table.remove(self)
 end
 
-function Stack:display()
+function stack:display()
 
-    for i = 1, #Stack do
-        print(Stack[i])
+    for i = 1, #stack do
+        print(stack[i])
     end   
 end    

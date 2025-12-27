@@ -1,17 +1,17 @@
 --Queue follows the First In First Out principle
 
-Queue = {}
+queue = {}
 
-function Queue:enqueue(value)
+function queue:enqueue(value)
     table.insert(self, value)
 end    
 
-function Queue:dequeue()
+function queue:dequeue()
     table.insert(self, 1)
 end    
 
-function Queue:display()
-    for i = 1, #Stack do
-        print(Stack[i])
+function queue:display()
+    for i = 1, #queue do
+        print(queue[i])
     end   
 end    
