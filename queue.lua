@@ -7,7 +7,7 @@ function queue:enqueue(value)
 end    
 
 function queue:dequeue()
-    table.insert(self, 1)
+    table.remove(self, 1)
 end    
 
 function queue:display()
